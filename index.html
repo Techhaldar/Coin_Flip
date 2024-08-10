@@ -6,58 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coin_Flip</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
     <style>
         body {
-    background-color: rgb(201, 121, 187);
-}
+            background-color: rgb(201, 121, 187);
+        }
 
-#img {
-    border-radius: 10rem;
-}
+        #img {
+            border-radius: 10rem;
+        }
 
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
 
-    to {
-        transform: rotate(360deg);
-    }
-}
+            to {
+                transform: rotate(360deg);
+            }
+        }
 
-.spinning {
-    animation: spin 1s linear;
-}
+        .spinning {
+            animation: spin 1s linear;
+        }
 
-.heading {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-decoration: underline;
-    color: rgb(13, 16, 214);
-    font-size: 28px;
-}
+        .heading {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(242, 242, 245);
+            font-size: 28px;
+            width: 250px;
+            margin: auto;
+            margin-top: 8px;
+            border-radius: 18px;
+            padding: 4px;
+            background-color: green;
+        }
 
-p {
-    /* font-size: 28px; */
-    font-family: fantasy;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
+        p {
+            /* font-size: 28px; */
+            font-family: fantasy;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     </style>
 </head>
 
 
 <body>
-    <h2 class="text-center text-4xl heading">Coin Flip</h2>
-    <div class="flex flex-col justify-center items-center m-3">
-        <div class="tossBtn flex flex-col justify-center items-center">
-            <img src="tails.jpg" class="w-72" alt="coin" id="img">
-            <button class="bg-black text-white px-4 py-2 rounded-xl mt-3" id="btn" onclick="tossFunction()">Click to
-                Flip</button>
-        </div>
-        <div class="para m-2">
+    <div class="main">
+        <h2 class="text-center text-4xl heading">Coin Flip</h2>
+        <div class="flex flex-col justify-center items-center m-3">
+            <div class="tossBtn flex flex-col justify-center items-center">
+                <img src="tails.jpg" class="w-72" alt="coin" id="img">
+                <button class="bg-black text-white px-4 py-2 rounded-xl mt-3" id="btn" onclick="tossFunction()">Click to
+                    Flip</button>
+            </div>
+            <div class="para m-2">
 
+            </div>
         </div>
     </div>
 </body>
