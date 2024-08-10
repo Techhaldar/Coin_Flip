@@ -4,14 +4,8 @@ body{
 }
 .main {
     width: 350px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
+    border-radius: 10px;
     background-color: rgb(127, 164, 197);
     margin-top: 43px;
 }
-
-/* .main h2{
-    border: 1px solid black;
-    width: 230px;
-    align-items: center;
-    align-content: center;
-} */
